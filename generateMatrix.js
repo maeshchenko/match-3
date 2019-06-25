@@ -1,4 +1,4 @@
-function generateMatrix(size){
+function generatePointMatrix(size){
   let result = [];
   for(let y = 0; y<size.height; y++){
     for(let x = 0; x<size.width; x++){

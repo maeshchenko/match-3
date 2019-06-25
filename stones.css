@@ -1,0 +1,58 @@
+.gem{
+  /* используем одну большую картинку со всеми гемами, чтобы 1 раз загрузить и использовать постоянно */
+/*    background-image: url('http://i.imgur.com/Yoa2Bme.png'); */
+  
+  /* попробуй переделать теперь на этот набор спрайтов */
+  background-image: url('gems.png');
+
+  background-repeat: no-repeat;
+  background-size: 375px 400px;
+  width: 50px;
+  height: 50px;
+}
+
+.gem-0{
+  background: none;
+}
+
+.gem-1{
+  /* указываем на нашей большой картинке-спрайте положения конкретных гемов */
+  background-position: -29px -23px;
+ /* подробнее почитай про цсс-спрайты и бекграунд-имедж свойство */
+  /* чтобы не считать позицию вручную я использовал сайт http://www.spritecow.com/ */
+}
+
+.gem-2{
+  background-position: -84px -22px;
+}
+
+.gem-3{
+  background-position: -141px -21px;
+}
+
+.gem-4{
+  background-position: -28px -75px;
+}
+
+.gem-5{
+  background-position: -86px -78px;
+}
+.gem-6{
+  background-position: -140px -75px;
+}
+
+.gem-7{
+  background-position: -30px -130px;
+}
+
+.gem-8{
+  background-position: -84px -130px;
+}
+
+.gem-9{
+  background-position: -140px -130px;
+}
+
+.active {
+  border: 4px solid rgb(255, 215, 0);
+}

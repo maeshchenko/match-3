@@ -23,7 +23,7 @@ function pyramidUp(x,y,size){
 }
 
 function pyramidDown(x,y,size){
-  return x>=x && size-(y+1)<= x;
+  return y>=x && size-(y+1)<= x;
 }
 
 function clock(x,y,sizy){
