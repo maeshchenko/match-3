@@ -1,15 +1,20 @@
 function createField(size){
   let field = document.createElement('div');
   field.classList.add('field');
-  field.style.width = size.width + 'em';
-  field.style.height = size.height + 'em';
 
-  let ntx = generateMatrix(size);
+  let pointsArr = generateMatrix(size);
   
-  field.cells = ntx.map(createCell);
-  field.cells.forEach(function(cell){
-    field.append(cell.element);
+  let cellsArr = pointsArr.map(function(point){
+      let cell = document.createElement('div');
+      cell.classList.add('cell');
+      cell.style.left = point.x + 'em';
+      cell.style.top = point.y + 'em';
+      return cell;
   });
-  
+
+  cellsArr.forEach(function(cell){
+    field.append(cell);
+  });
+
   return field;
 };

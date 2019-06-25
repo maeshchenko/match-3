@@ -1,0 +1,14 @@
+.cell{
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid aquamarine;
+}
+.field{
+  position: relative;
+  font-size: 50px;
+  border-right: 1px solid darkgrey;
+}
