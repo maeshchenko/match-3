@@ -5,9 +5,11 @@ function createField(size){
   field.style.height = size.height + 'em';
 
   let ntx = generateMatrix(size);
+  
   field.cells = ntx.map(createCell);
   field.cells.forEach(function(cell){
     field.append(cell.element);
   });
+  
   return field;
-}
+};
